@@ -83,7 +83,7 @@ const App: React.FC = () => {
         })
       })
   }, [JSON.stringify(tableParams)])
-
+  1
   useEffect(() => {
     fetchData()
   }, [fetchData])
