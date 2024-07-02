@@ -83,10 +83,9 @@ const App: React.FC = () => {
         })
       })
   }, [JSON.stringify(tableParams)])
-  const
-    useEffect(() => {
-      fetchData()
-    }, [fetchData])
+  useEffect(() => {
+    fetchData()
+  }, [fetchData])
 
   const handleTableChange: any = (
     pagination: TablePaginationConfig,
