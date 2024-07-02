@@ -40,7 +40,6 @@ const getTableData = ({ current, pageSize }: any, formData: any): Promise<Result
 
 export default function TableAhook() {
   const [form] = Form.useForm()
-  const [state, setState] = useState(0)
   const { tableProps, search } = useAntdTable(getTableData, {
     defaultPageSize: 5,
     form
@@ -101,20 +100,9 @@ export default function TableAhook() {
       </Form>
     </div>
   )
-  useEffect(() => {
-    const c = state + 1
-    console.log(c)
-    setState(c)
-  }, [state])
-  const handleTest = () => {
-    const atom = {
-      value: 1
-    }
-  }
 
   const searchForm = (
     <div style={{ marginBottom: 16 }}>
-      <p onClick={handleTest}>看这个</p>
       <Form form={form} style={{ display: 'flex', justifyContent: 'flex-end' }}>
         <Form.Item name="gender" initialValue="male">
           <Select style={{ width: 120, marginRight: 16 }} onChange={submit}>
