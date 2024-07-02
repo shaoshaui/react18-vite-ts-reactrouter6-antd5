@@ -1,0 +1,13 @@
+.eslintrc.js
+node_modules
+*.md
+*.woff
+*.ttf
+.vscode
+.idea
+dist
+config
+/public
+.husky
+.DS_Store
+*.local
