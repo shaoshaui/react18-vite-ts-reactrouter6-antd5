@@ -7,9 +7,10 @@
     "dev": "vite --host",
     "build:prod": "vite build",
     "preview": "vite preview",
-    "prepare": "husky install",
     "lint": "eslint . --ext .js,.ts,.jsx,.tsx --fix",
-    "format": "prettier --write \"./**/*.{js,json,ts,tsx,css,scss,html}\""
+    "prepare": "husky install",
+    "format": "prettier --write \"./**/*.{js,json,ts,tsx,css,scss,html}\"",
+    "tsc": "tsc --noEmit"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx}": [
