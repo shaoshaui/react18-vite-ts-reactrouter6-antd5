@@ -1,5 +1,5 @@
 {
-  "name": "react18-antd5-template",
+  "name": "react18-antd5-vite-reactrouter6-ts",
   "private": true,
   "scripts": {
     "start": "vite",

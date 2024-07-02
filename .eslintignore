@@ -1,4 +1,3 @@
-.eslintrc.js
 node_modules
 *.md
 *.woff
@@ -10,4 +9,4 @@ config
 /public
 .husky
 .DS_Store
-*.local
+Dockerfile
