@@ -1,12 +1,6 @@
-# react18-antd5-template
+# react18-antd5-vite-reactrouter6-ts
 
-致力打造成一个基于新版主流技术的React中后台模版 [预览地址](https://cszo.github.io/react18-antd5-template)
-
-Continuously optimizing！
-Continuously exploring best practices！
-Continuously integration of popular technology solutions for middle and back-end web systems！
-
-Due to my limited skills 🤏 Welcome to star、fork、PR、or make your valuable suggestions 👏👏
+致力打造成一个基于新版主流技术的React中后台模版
 
 ## 主要技术栈
 

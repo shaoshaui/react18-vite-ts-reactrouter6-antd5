@@ -9,8 +9,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
-    'prettier'
+    'prettier',
+    'plugin:prettier/recommended'
   ],
   settings: {
     react: {
@@ -34,9 +34,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'no-empty-function': 'off',
     'no-async-promise-executor': 'off',
-    'quotes': ['error', 'single'],
     'prefer-destructuring': 'off',
-    'react/react-in-jsx-scope': 'off',
     'react/prop-types': 'off',
     '@typescript-eslint/no-shadow': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
@@ -44,7 +42,6 @@ module.exports = {
     '@typescript-eslint/no-non-null-assertion': 'off',
     // 'array-bracket-spacing': ['error', 'always'], // 数组前后留空格
     'object-curly-spacing': ['error', 'always'], // 对象前后留空格
-    'semi': ['error', 'never'], // ;分号省略
     'comma-dangle': ['error', 'never'], // ,逗号省略
     'simple-import-sort/imports': 'error',
     'simple-import-sort/exports': 'error',
