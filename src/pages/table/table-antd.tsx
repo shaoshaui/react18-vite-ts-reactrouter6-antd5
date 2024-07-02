@@ -82,9 +82,8 @@ const App: React.FC = () => {
           }
         })
       })
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [JSON.stringify(tableParams)])
-
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     fetchData()
   }, [fetchData])
