@@ -28,20 +28,12 @@ jobs:
       # 构建项目
       - name: Build
         run: npm run build
-      - name: Clean old worktrees
-        run: |
-          git worktree list
-          worktree_count=$(git worktree list | wc -l)
-          if [ "$worktree_count" -gt 1 ]; then
-            git worktree list | tail -n +2 | awk '{print $1}' | xargs -I {} git worktree remove {}
-          fi
-
       # 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           # 指定仓库：你要发布的仓库路径名
-          repository-name: shaoshaui/react18-vite-ts-reactrouter6-antd5
+          # repository-name: shaoshaui/react18-vite-ts-reactrouter6-antd5
           # 部署到 deploy-pages 分支，也就是部署后提交到那个分支
           branch: gh-pages
           # 填写打包好的目录名称路径，本项目配置在根目录
