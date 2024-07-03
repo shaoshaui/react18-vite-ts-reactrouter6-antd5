@@ -28,13 +28,14 @@ jobs:
       # 构建项目
       - name: Build
         run: npm run build
-      # 部署到 GitHub Pages
-      - name: Deploy
+      - name: Clean old worktrees
         run: |
           # Clean old worktrees
           git worktree list
           git worktree remove <path_to_worktree> --force || true  # 可以忽略移除失败
 
+      # 部署到 GitHub Pages
+      - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           # 指定仓库：你要发布的仓库路径名
