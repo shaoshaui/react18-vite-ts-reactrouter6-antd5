@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16.x'
+          node-version: '20.x'
           cache: 'npm'
 
       # 安装依赖
@@ -30,6 +30,11 @@ jobs:
         run: npm run build
       # 部署到 GitHub Pages
       - name: Deploy
+        run: |
+          # Clean old worktrees
+          git worktree list
+          git worktree remove <path_to_worktree> --force || true  # 可以忽略移除失败
+
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           # 指定仓库：你要发布的仓库路径名
