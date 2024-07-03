@@ -30,11 +30,12 @@ jobs:
         run: npm run build
       - name: Clean old worktrees
         run: |
-          git worktree prune
           git worktree list
-          if [ $(git worktree list | wc -l) -gt 0 ]; then
-            git worktree remove $(git worktree list | awk '{print $1}')
+          worktree_count=$(git worktree list | wc -l)
+          if [ "$worktree_count" -gt 1 ]; then
+            git worktree list | tail -n +2 | awk '{print $1}' | xargs -I {} git worktree remove {}
           fi
+
       # 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
