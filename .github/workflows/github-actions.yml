@@ -28,7 +28,13 @@ jobs:
       # 构建项目
       - name: Build
         run: npm run build
-
+      - name: Clean old worktrees
+        run: |
+          git worktree prune
+          git worktree list
+          if [ $(git worktree list | wc -l) -gt 0 ]; then
+            git worktree remove $(git worktree list | awk '{print $1}')
+          fi
       # 部署到 GitHub Pages
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4.3.3
