@@ -34,8 +34,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           # 指定仓库：你要发布的仓库路径名
-          repository-name: msyuan/vitePress-project
+          repository-name: shaoshuai/react18-vite-ts-reactrouter6-antd5
           # 部署到 deploy-pages 分支，也就是部署后提交到那个分支
-          branch: deploy-pages
+          branch: main
           # 填写打包好的目录名称路径，本项目配置在根目录
           folder: dist
