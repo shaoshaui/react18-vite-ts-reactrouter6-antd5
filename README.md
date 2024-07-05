@@ -1,10 +1,10 @@
-# react18-antd5-vite-reactrouter6-ts
+# react18-vite-ts-reactRouter6-antd5
 
 致力打造成一个基于新版主流技术的React中后台模版
 
-> ##### 演示地址：[https://shaoshaui.github.io/react18-antd5-vite-reactrouter6-ts](https://shaoshaui.github.io/react18-antd5-vite-reactrouter6-ts)
+> ##### 演示地址：[https://shaoshaui.github.io/react18-vite-ts-reactrouter6-antd5](https://shaoshaui.github.io/react18-vite-ts-reactrouter6-antd5)
 >
-> ##### Github地址：[https://shaoshaui.github.io/react18-antd5-vite-reactrouter6-ts](https://shaoshaui.github.io/react18-antd5-vite-reactrouter6-ts)
+> ##### Github地址：[https://shaoshaui.github.io/react18-vite-ts-reactrouter6-antd5](https://shaoshaui.github.io/react18-vite-ts-reactrouter6-antd5)
 >
 
 ## 主要技术栈
@@ -30,7 +30,7 @@
 ## 目录结构
 
 ```markdown
-react18-antd5-template
+react18-vite-ts-reactrouter6-antd5
 
 ├─src
 | ├─components      // 公共组件
